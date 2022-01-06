@@ -11,7 +11,7 @@ public class CalculatePower {
         if (n == 1) {
             return x;
         }
-        int ans = x * power(x, n - 1);
-        return ans;
+        return x * power(x, n - 1);
+        // return ans;
     }
 }
