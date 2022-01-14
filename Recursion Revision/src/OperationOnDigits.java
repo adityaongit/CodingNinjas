@@ -1,7 +1,6 @@
 public class OperationOnDigits {
     public static void main(String[] args) {
-        int res = productOfDigits(1342);
-        System.out.println(res);
+        reverse(1342);
     }
 
     static int sumOfDigits(int n) {
@@ -16,5 +15,14 @@ public class OperationOnDigits {
             return 1;
         }
         return (n % 10) * productOfDigits(n / 10);
+    }
+
+    static void reverse(int n) {
+        if (n < 10) {
+            System.out.println(n);
+        } else {
+            System.out.print(n % 10);
+            reverse(n / 10);
+        }
     }
 }
