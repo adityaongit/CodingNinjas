@@ -1,6 +1,4 @@
 {
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
-    "workbench.colorTheme": "IntelliJ Dark",
-    "editor.fontFamily": "Jetbrains Mono, Consolas, 'Courier New', monospace"
 }
