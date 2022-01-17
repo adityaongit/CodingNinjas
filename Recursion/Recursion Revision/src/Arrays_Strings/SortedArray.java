@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays_Strings;
 
 public class SortedArray {
     public static void main(String[] args) {
