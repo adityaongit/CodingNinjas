@@ -2,7 +2,8 @@ package Arrays_Strings;
 
 public class Stream {
     public static void main(String[] args) {
-        String res = skip("abcxdxbx", 'x');
+        // String res = skip("abcxdxbx", 'x');
+        String res = skipApple("sdeaapplef");
         System.out.println(res);
     }
 
