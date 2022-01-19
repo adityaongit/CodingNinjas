@@ -2,15 +2,11 @@ package classesandobjects;
 
 public class StudentUse {
     public static void main(String[] args) {
-        Student s1 = new Student();
-        Student s2 = new Student();
+        Student s1 = new Student("Aditya", 11);
+        Student s2 = new Student("Raghav", 17);
+        Student s3 = new Student("Ragav", 16);
 
-        s1.name = "Aditya";
-        s1.rollNumber = 17;
-        System.out.println(s1.name + " " + s1.rollNumber);
-
-        s2.name = "Raghav";
-        s2.rollNumber = 31;
-        System.out.println(s2.name + " " + s2.rollNumber);
+        System.out.println(s1.getNumStudents());
+        System.out.println(s2.getNumStudents());
     }
 }
