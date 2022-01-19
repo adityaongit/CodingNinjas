@@ -13,7 +13,7 @@ public class Student {
         numStudents++;
     }
 
-    public int getNumStudents(){
+    public static int getNumStudents(){
         return numStudents;
     }
 }
