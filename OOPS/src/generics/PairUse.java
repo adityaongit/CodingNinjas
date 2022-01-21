@@ -1,7 +1,8 @@
 package generics;
 
 public class PairUse {
-    Pair<String> p = new Pair<String>("ab", "cd");
-    p.setFirst("def");
-    String s = p.getFirst();
+	public static void main(String[] args) {
+		Pair<String> p = new Pair<String>("ab", "cd");
+		p.setFirst("def");
+	}
 }
