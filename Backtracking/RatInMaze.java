@@ -23,7 +23,12 @@ public class RatInMaze {
 
         // Destination cell
         if (i == n - 1 && j == n - 1) {
-            path[i][j] = 1;
+            for (int r = 0; r < n; r++) {
+                for (int c = 0; c < n; c++) {
+                    System.out.print(path[r][c] + " ");
+                }
+                System.out.println();
+            }
             return true;
         }
 
