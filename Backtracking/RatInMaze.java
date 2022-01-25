@@ -12,6 +12,38 @@ public class RatInMaze {
     }
 
     public static boolean solveMaze(int maze[][], int i, int j, int path[][]) {
+        int n = maze.length;
+        // Check if i, j cell is valid or not
+        if (i < 0 || i >= n || j < 0 || j >= n || maze[i][j] == 0 || path[i][j] == 1) {
+            return false;
+        }
+
+        // Include the cell in path
+        path[i][j] = 1;
+
+        // Destination cell
+        if (i == n - 1 && j == n - 1) {
+            path[i][j] = 1;
+            return true;
+        }
+
+        // Explore further
+        // Top
+        if (solveMaze(maze, i - 1, j, path)) {
+            return true;
+        }
+        // Right
+        if (solveMaze(maze, i, j + 1, path)) {
+            return true;
+        }
+        // Down
+        if (solveMaze(maze, i + 1, j, path)) {
+            return true;
+        }
+        // Left
+        if (solveMaze(maze, i, j - 1, path)) {
+            return true;
+        }
         return false;
     }
 }
