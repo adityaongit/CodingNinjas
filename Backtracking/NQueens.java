@@ -5,6 +5,7 @@ public class NQueens {
 
     public static void placeNQueens(int n) {
         int board[][] = new int[n][n];
+        System.out.println(board);
         placeQueens(n, 0);
     }
 
