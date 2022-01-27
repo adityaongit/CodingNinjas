@@ -18,20 +18,22 @@ public class FloodFill {
         scn.close();
     }
 
-    public static void floodfill(int[][] maze, int sr, int sc, String asf, boolean[][] visited) {
-        if (sr < 0 || sc < 0 || sr == maze.length || sc == maze[0].length || maze[sr][sc] == 1
-                || visited[sr][sc] == true) {
+    public static void floodfill(int[][] maze, int row, int col, String psf, boolean[][] visited) {
+        // psf: printed so far
+
+        if (row < 0 || col < 0 || row == maze.length || col == maze[0].length || maze[row][col] == 1
+                || visited[row][col] == true) {
             return;
         }
-        if (sr == maze.length - 1 && sc == maze[0].length - 1) {
-            System.out.println(asf);
+        if (row == maze.length - 1 && col == maze[0].length - 1) {
+            System.out.println(psf);
             return;
         }
-        visited[sr][sc] = true;
-        floodfill(maze, sr - 1, sc, asf + "t", visited);
-        floodfill(maze, sr, sc - 1, asf + "l", visited);
-        floodfill(maze, sr + 1, sc, asf + "d", visited);
-        floodfill(maze, sr, sc + 1, asf + "r", visited);
-        visited[sr][sc] = false;
+        visited[row][col] = true;
+        floodfill(maze, row - 1, col, psf + "t", visited);
+        floodfill(maze, row, col - 1, psf + "l", visited);
+        floodfill(maze, row + 1, col, psf + "d", visited);
+        floodfill(maze, row, col + 1, psf + "r", visited);
+        visited[row][col] = false;
     }
 }
