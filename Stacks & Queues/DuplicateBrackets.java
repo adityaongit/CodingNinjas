@@ -15,7 +15,7 @@ public class DuplicateBrackets {
                     System.out.println(true);
                     return;
                 } else {
-                    while (st.peek() == '(') {
+                    while (st.peek() != '(') {
                         st.pop();
                     }
                     st.pop();
