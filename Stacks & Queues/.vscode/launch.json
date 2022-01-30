@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LargestAreaHistogram",
+            "request": "launch",
+            "mainClass": "LargestAreaHistogram",
+            "projectName": "Stacks & Queues_447b6a4b"
+        },
+        {
+            "type": "java",
             "name": "Launch NextGreaterElement",
             "request": "launch",
             "mainClass": "NextGreaterElement",
