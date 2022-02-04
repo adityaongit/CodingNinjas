@@ -13,7 +13,7 @@ public class LL {
             Node temp = new Node();
             temp.data = val;
             temp.next = null;
-            
+
             if (size == 0) {
                 head = tail = temp;
             } else {
@@ -21,6 +21,20 @@ public class LL {
                 tail = temp;
             }
             size++;
+        }
+
+        public void display() {
+            Node temp = head;
+
+            while (temp != null) {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
+            }
+            System.out.println();
+        }
+
+        public int size() {
+            return size;
         }
     }
 
