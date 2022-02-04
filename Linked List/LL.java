@@ -36,6 +36,19 @@ public class LL {
         public int size() {
             return size;
         }
+
+        public void removeFirst() {
+            if (size == 0) {
+                System.out.println("list is empty");
+            }
+            if (size == 1) {
+                head = tail = null;
+                size = 0;
+            } else {
+                head = head.next;
+                size--;
+            }
+        }
     }
 
 }
