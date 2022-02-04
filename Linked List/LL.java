@@ -40,8 +40,7 @@ public class LL {
         public void removeFirst() {
             if (size == 0) {
                 System.out.println("list is empty");
-            }
-            if (size == 1) {
+            } else if (size == 1) {
                 head = tail = null;
                 size = 0;
             } else {
