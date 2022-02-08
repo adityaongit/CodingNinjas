@@ -1,4 +1,31 @@
 public class BinaryTreeUse {
+
+    public static void printTreeDetailed(BinaryTreeNode<Integer> root) {
+        if (root == null) {
+            return;
+        }
+        System.out.print(root.data + ": ");
+        if (root.left != null) {
+            System.out.print("L" + root.left.data + ", ");
+        }
+        if (root.right != null) {
+            System.out.print("R" + root.right.data);
+        }
+        System.out.println();
+
+        printTreeDetailed(root.left);
+        printTreeDetailed(root.right);
+    }
+
+    public static void printTreeNoob(BinaryTreeNode<Integer> root) {
+        if (root == null) {
+            return;
+        }
+        System.out.println(root.data);
+        printTreeNoob(root.left);
+        printTreeNoob(root.right);
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode<Integer> root = new BinaryTreeNode<Integer>(1);
 
@@ -11,5 +38,7 @@ public class BinaryTreeUse {
         BinaryTreeNode<Integer> threeLeft = new BinaryTreeNode<Integer>(5);
         rootLeft.right = twoRight;
         rootRight.left = threeLeft;
+
+        printTreeDetailed(root);
     }
 }
