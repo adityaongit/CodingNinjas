@@ -9,7 +9,7 @@ content_assist_disable_completion_trigger_chars=false
 content_assist_fill_method_arguments=true
 content_assist_guess_method_arguments=true
 content_assist_insert_completion=false
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="BalancedTreeReturn"><rhs name\="BalancedTreeReturn"/></lhs><lhs name\="DiameterOfBT$DiaPair"><rhs name\="DiameterOfBT$DiaPair"/></lhs><lhs name\="BinaryTreeNode"><rhs name\="BinaryTreeNode"/></lhs><lhs name\="BST.BinarySearchTree$Node"><rhs name\="BST.BinarySearchTree$Node"/></lhs></history>
 content_assist_number_of_computers=12
 content_assist_prefix_completion=false
 content_assist_proposals_background=255,255,255
@@ -17,6 +17,8 @@ content_assist_proposals_foreground=0,0,0
 content_assist_show_visible_proposals=true
 content_assist_sorter=org.eclipse.jdt.ui.RelevanceSorter
 eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
 org.eclipse.jdt.ui.formatterprofiles.version=21
 spelling_locale_initialized=true
 typefilter_migrated_2=true
